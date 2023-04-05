@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7E9CAF1A-57D8-4BDE-B38B-DE959CC76ED2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>fastFood</RootNamespace>
+    <AssemblyName>fastFood</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oder1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oder1.Designer.cs">
+      <DependentUpon>Oder1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oder2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oder2.Designer.cs">
+      <DependentUpon>Oder2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oder3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oder3.Designer.cs">
+      <DependentUpon>Oder3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oder4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oder4.Designer.cs">
+      <DependentUpon>Oder4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oder1.resx">
+      <DependentUpon>Oder1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oder2.resx">
+      <DependentUpon>Oder2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oder3.resx">
+      <DependentUpon>Oder3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oder4.resx">
+      <DependentUpon>Oder4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\Menu-Customer\Chicken\deco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mF_Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mF_icBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mF_titleBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login_Background.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login_boder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\locked.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decoBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titleBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Decomenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NMCNPM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin-ep_bg.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\Menu-Customer\Hamburger\deco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\Menu-Customer\Hamburger\tilte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\Menu-Customer\Hamburger\hbg_egg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\Menu-Customer\Chicken\tilte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\Menu-Customer\Noodles\tilte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\Menu-Customer\Noodles\deco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\Menu-Customer\Hamburger\hbg %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\Menu-Customer\Hamburger\hbg %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\Menu-Customer\Hamburger\hbg %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\Menu-Customer\Chicken\chicken %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\Menu-Customer\Chicken\chicken %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\Menu-Customer\Chicken\chicken %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\Menu-Customer\Noodles\noodle_beef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\Menu-Customer\Noodles\noodle_eggbeef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\Menu-Customer\Noodles\noodles_egg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\Menu-Customer\Noodles\noodle %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\Menu-Customer\Noodles\noodle %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\Menu-Customer\Noodles\noodle %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\icon\iconX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\Menu-Customer\Another\another_bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\Menu-Customer\Another\another %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\Menu-Customer\Another\another %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\Menu-Customer\Another\another %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\Menu-Customer\Another\another %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\Menu-Customer\Another\another %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\Menu-Customer\Another\another %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\Menu-Customer\Another\another %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\icon\icUser.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
