@@ -41,10 +41,12 @@
             this.bnt_qlnv = new Guna.UI2.WinForms.Guna2Button();
             this.bnt_home = new Guna.UI2.WinForms.Guna2Button();
             this.bnt_logout = new Guna.UI2.WinForms.Guna2Button();
+            this.ptb_close = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_close)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2PictureBox1
@@ -264,6 +266,20 @@
             this.bnt_logout.TabIndex = 20;
             this.bnt_logout.Text = "Log out";
             // 
+            // ptb_close
+            // 
+            this.ptb_close.BackColor = System.Drawing.Color.Transparent;
+            this.ptb_close.Image = global::fastFood.Properties.Resources.iconX;
+            this.ptb_close.ImageRotate = 0F;
+            this.ptb_close.Location = new System.Drawing.Point(1415, -12);
+            this.ptb_close.Name = "ptb_close";
+            this.ptb_close.Size = new System.Drawing.Size(135, 65);
+            this.ptb_close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptb_close.TabIndex = 23;
+            this.ptb_close.TabStop = false;
+            this.ptb_close.UseTransparentBackground = true;
+            this.ptb_close.Click += new System.EventHandler(this.ptb_close_Click);
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -271,6 +287,7 @@
             this.BackgroundImage = global::fastFood.Properties.Resources.admin_ep_bg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1500, 800);
+            this.Controls.Add(this.ptb_close);
             this.Controls.Add(this.bnt_logout);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.label1);
@@ -285,6 +302,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_close)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -305,5 +323,6 @@
         private Guna.UI2.WinForms.Guna2Button bnt_qlnv;
         private Guna.UI2.WinForms.Guna2Button bnt_home;
         private Guna.UI2.WinForms.Guna2Button bnt_logout;
+        private Guna.UI2.WinForms.Guna2PictureBox ptb_close;
     }
 }

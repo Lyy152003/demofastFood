@@ -35,6 +35,7 @@
             this.ptb_phomai = new Guna.UI2.WinForms.Guna2PictureBox();
             this.ptb_xucxich = new Guna.UI2.WinForms.Guna2PictureBox();
             this.ptb_nugget = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.ptb_close = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_soda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_coca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_tra)).BeginInit();
@@ -42,6 +43,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptb_phomai)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_xucxich)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_nugget)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_close)).BeginInit();
             this.SuspendLayout();
             // 
             // ptb_soda
@@ -49,7 +51,7 @@
             this.ptb_soda.BackColor = System.Drawing.Color.Transparent;
             this.ptb_soda.Image = global::fastFood.Properties.Resources.another__1_;
             this.ptb_soda.ImageRotate = 0F;
-            this.ptb_soda.Location = new System.Drawing.Point(467, -18);
+            this.ptb_soda.Location = new System.Drawing.Point(289, 12);
             this.ptb_soda.Name = "ptb_soda";
             this.ptb_soda.Size = new System.Drawing.Size(583, 233);
             this.ptb_soda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -62,7 +64,7 @@
             this.ptb_coca.BackColor = System.Drawing.Color.Transparent;
             this.ptb_coca.Image = global::fastFood.Properties.Resources.another__7_;
             this.ptb_coca.ImageRotate = 0F;
-            this.ptb_coca.Location = new System.Drawing.Point(502, 236);
+            this.ptb_coca.Location = new System.Drawing.Point(334, 251);
             this.ptb_coca.Name = "ptb_coca";
             this.ptb_coca.Size = new System.Drawing.Size(487, 211);
             this.ptb_coca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -75,7 +77,7 @@
             this.ptb_tra.BackColor = System.Drawing.Color.Transparent;
             this.ptb_tra.Image = global::fastFood.Properties.Resources.another__6_;
             this.ptb_tra.ImageRotate = 0F;
-            this.ptb_tra.Location = new System.Drawing.Point(502, 453);
+            this.ptb_tra.Location = new System.Drawing.Point(334, 468);
             this.ptb_tra.Name = "ptb_tra";
             this.ptb_tra.Size = new System.Drawing.Size(513, 259);
             this.ptb_tra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -135,20 +137,35 @@
             this.ptb_nugget.TabStop = false;
             this.ptb_nugget.UseTransparentBackground = true;
             // 
+            // ptb_close
+            // 
+            this.ptb_close.BackColor = System.Drawing.Color.Transparent;
+            this.ptb_close.Image = global::fastFood.Properties.Resources.iconX;
+            this.ptb_close.ImageRotate = 0F;
+            this.ptb_close.Location = new System.Drawing.Point(930, 2);
+            this.ptb_close.Name = "ptb_close";
+            this.ptb_close.Size = new System.Drawing.Size(135, 65);
+            this.ptb_close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptb_close.TabIndex = 9;
+            this.ptb_close.TabStop = false;
+            this.ptb_close.UseTransparentBackground = true;
+            this.ptb_close.Click += new System.EventHandler(this.ptb_close_Click);
+            // 
             // Oder4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::fastFood.Properties.Resources.another_bg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1484, 761);
+            this.ClientSize = new System.Drawing.Size(1045, 765);
+            this.Controls.Add(this.ptb_close);
+            this.Controls.Add(this.ptb_tra);
+            this.Controls.Add(this.ptb_coca);
+            this.Controls.Add(this.ptb_soda);
             this.Controls.Add(this.ptb_nugget);
             this.Controls.Add(this.ptb_xucxich);
             this.Controls.Add(this.ptb_phomai);
             this.Controls.Add(this.ptb_khoaitay);
-            this.Controls.Add(this.ptb_tra);
-            this.Controls.Add(this.ptb_coca);
-            this.Controls.Add(this.ptb_soda);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Oder4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -160,6 +177,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptb_phomai)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_xucxich)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_nugget)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_close)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -173,5 +191,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox ptb_phomai;
         private Guna.UI2.WinForms.Guna2PictureBox ptb_xucxich;
         private Guna.UI2.WinForms.Guna2PictureBox ptb_nugget;
+        private Guna.UI2.WinForms.Guna2PictureBox ptb_close;
     }
 }

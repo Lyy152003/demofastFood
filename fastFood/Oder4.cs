@@ -16,5 +16,11 @@ namespace fastFood
         {
             InitializeComponent();
         }
+
+        private void ptb_close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
     }
 }

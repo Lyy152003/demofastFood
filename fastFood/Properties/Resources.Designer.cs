@@ -223,6 +223,16 @@ namespace fastFood.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap deco4 {
+            get {
+                object obj = ResourceManager.GetObject("deco4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap decoBackground {
             get {
                 object obj = ResourceManager.GetObject("decoBackground", resourceCulture);
@@ -236,6 +246,16 @@ namespace fastFood.Properties {
         internal static System.Drawing.Bitmap Decomenu {
             get {
                 object obj = ResourceManager.GetObject("Decomenu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dot_mOrder {
+            get {
+                object obj = ResourceManager.GetObject("dot_mOrder", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -366,6 +386,56 @@ namespace fastFood.Properties {
         internal static System.Drawing.Bitmap mF_titleBackground {
             get {
                 object obj = ResourceManager.GetObject("mF_titleBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mOrder_deco {
+            get {
+                object obj = ResourceManager.GetObject("mOrder_deco", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mOrder_deco__1_ {
+            get {
+                object obj = ResourceManager.GetObject("mOrder_deco (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mOrder_deco__2_ {
+            get {
+                object obj = ResourceManager.GetObject("mOrder_deco (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mOrder_deco2 {
+            get {
+                object obj = ResourceManager.GetObject("mOrder_deco2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mOrder_deco3 {
+            get {
+                object obj = ResourceManager.GetObject("mOrder_deco3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

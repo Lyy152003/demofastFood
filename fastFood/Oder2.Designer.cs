@@ -33,11 +33,13 @@
             this.ptb_ck1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.ptb_close = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_ck2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_ck3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_ck1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_close)).BeginInit();
             this.SuspendLayout();
             // 
             // ptb_ck2
@@ -45,7 +47,7 @@
             this.ptb_ck2.BackColor = System.Drawing.Color.Transparent;
             this.ptb_ck2.Image = global::fastFood.Properties.Resources.chicken__3_;
             this.ptb_ck2.ImageRotate = 0F;
-            this.ptb_ck2.Location = new System.Drawing.Point(411, 222);
+            this.ptb_ck2.Location = new System.Drawing.Point(200, 222);
             this.ptb_ck2.Name = "ptb_ck2";
             this.ptb_ck2.Size = new System.Drawing.Size(543, 336);
             this.ptb_ck2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -58,9 +60,9 @@
             this.ptb_ck3.BackColor = System.Drawing.Color.Transparent;
             this.ptb_ck3.Image = global::fastFood.Properties.Resources.chicken__2_;
             this.ptb_ck3.ImageRotate = 0F;
-            this.ptb_ck3.Location = new System.Drawing.Point(895, 393);
+            this.ptb_ck3.Location = new System.Drawing.Point(686, 436);
             this.ptb_ck3.Name = "ptb_ck3";
-            this.ptb_ck3.Size = new System.Drawing.Size(456, 345);
+            this.ptb_ck3.Size = new System.Drawing.Size(456, 325);
             this.ptb_ck3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptb_ck3.TabIndex = 6;
             this.ptb_ck3.TabStop = false;
@@ -73,7 +75,7 @@
             this.ptb_ck1.ImageRotate = 0F;
             this.ptb_ck1.Location = new System.Drawing.Point(-2, 417);
             this.ptb_ck1.Name = "ptb_ck1";
-            this.ptb_ck1.Size = new System.Drawing.Size(562, 333);
+            this.ptb_ck1.Size = new System.Drawing.Size(352, 344);
             this.ptb_ck1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptb_ck1.TabIndex = 7;
             this.ptb_ck1.TabStop = false;
@@ -84,7 +86,7 @@
             this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox3.Image = global::fastFood.Properties.Resources.tilte1;
             this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(12, -226);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(-150, -226);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.Size = new System.Drawing.Size(1292, 763);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -105,13 +107,28 @@
             this.guna2PictureBox4.TabStop = false;
             this.guna2PictureBox4.UseTransparentBackground = true;
             // 
+            // ptb_close
+            // 
+            this.ptb_close.BackColor = System.Drawing.Color.Transparent;
+            this.ptb_close.Image = global::fastFood.Properties.Resources.iconX;
+            this.ptb_close.ImageRotate = 0F;
+            this.ptb_close.Location = new System.Drawing.Point(930, 2);
+            this.ptb_close.Name = "ptb_close";
+            this.ptb_close.Size = new System.Drawing.Size(135, 65);
+            this.ptb_close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptb_close.TabIndex = 10;
+            this.ptb_close.TabStop = false;
+            this.ptb_close.UseTransparentBackground = true;
+            this.ptb_close.Click += new System.EventHandler(this.ptb_close_Click);
+            // 
             // Oder2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::fastFood.Properties.Resources.mF_Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1300, 750);
+            this.ClientSize = new System.Drawing.Size(1045, 765);
+            this.Controls.Add(this.ptb_close);
             this.Controls.Add(this.ptb_ck2);
             this.Controls.Add(this.ptb_ck1);
             this.Controls.Add(this.ptb_ck3);
@@ -126,6 +143,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptb_ck1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_close)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -137,5 +155,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox ptb_ck1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
+        private Guna.UI2.WinForms.Guna2PictureBox ptb_close;
     }
 }

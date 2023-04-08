@@ -36,6 +36,8 @@
             this.bnt_signin = new Guna.UI2.WinForms.Guna2Button();
             this.txtb_user = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtb_pass = new Guna.UI2.WinForms.Guna2TextBox();
+            this.ptb_close = new Guna.UI2.WinForms.Guna2PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_close)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -162,6 +164,20 @@
             this.txtb_pass.Size = new System.Drawing.Size(553, 63);
             this.txtb_pass.TabIndex = 17;
             // 
+            // ptb_close
+            // 
+            this.ptb_close.BackColor = System.Drawing.Color.Transparent;
+            this.ptb_close.Image = global::fastFood.Properties.Resources.iconX;
+            this.ptb_close.ImageRotate = 0F;
+            this.ptb_close.Location = new System.Drawing.Point(1415, -12);
+            this.ptb_close.Name = "ptb_close";
+            this.ptb_close.Size = new System.Drawing.Size(135, 65);
+            this.ptb_close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptb_close.TabIndex = 18;
+            this.ptb_close.TabStop = false;
+            this.ptb_close.UseTransparentBackground = true;
+            this.ptb_close.Click += new System.EventHandler(this.ptb_close_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,6 +185,7 @@
             this.BackgroundImage = global::fastFood.Properties.Resources.Login_bg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1500, 800);
+            this.Controls.Add(this.ptb_close);
             this.Controls.Add(this.txtb_pass);
             this.Controls.Add(this.txtb_user);
             this.Controls.Add(this.bnt_signin);
@@ -180,6 +197,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.Text = "Login";
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_close)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,5 +212,6 @@
         private Guna.UI2.WinForms.Guna2Button bnt_signin;
         private Guna.UI2.WinForms.Guna2TextBox txtb_user;
         private Guna.UI2.WinForms.Guna2TextBox txtb_pass;
+        private Guna.UI2.WinForms.Guna2PictureBox ptb_close;
     }
 }

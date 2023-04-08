@@ -76,6 +76,12 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="mainOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainOrder.Designer.cs">
+      <DependentUpon>mainOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Oder1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainOrder.resx">
+      <DependentUpon>mainOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Oder1.resx">
       <DependentUpon>Oder1.cs</DependentUpon>
@@ -272,6 +281,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images_fastFood\icon\icUser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\mainOrder\mOrder_deco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\mainOrder\mOrder_deco2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\mainOrder\mOrder_deco %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\mainOrder\mOrder_deco %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\mainOrder\dot_mOrder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\mainOrder\mOrder_deco3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_fastFood\mainOrder\deco4.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
